@@ -1,0 +1,362 @@
+/* This is the code for the header */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+
+.item-2{
+  cursor: pointer;
+}
+
+.item-3{
+  cursor: pointer;
+}
+
+.item-4{
+  cursor: pointer;
+}
+
+/* This is the code for making 2 pictures overlap */
+
+.container3 {
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.container1 {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  top: 0px;
+  left: 0px;
+}
+
+.container2 {
+  top: -550px;
+  left: 35px;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  width: 95%;
+  border-radius: 5%;
+}
+
+/* This puts the logo on top of the Bckground image */
+.container4 {
+  margin-bottom: -2500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* This positions the title text on top of the white square */
+.container5 {
+  position: absolute;
+  top: 80%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/* This puts the pictures/buttons on top of the white square */
+.container9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* This makes the link-text amother color */
+
+a {
+  color: black;
+}
+
+/* This makes the picture of Marselisborg Slot the same size as the rest of the pictures */
+
+.item-9 {
+  width: 347px;
+  height: auto;
+}
+
+/* This code positions the icons and the text of the features for the destinations */
+
+.container15 {
+  display: flex;
+  justify-content: space-around;
+  position: center;
+  margin-top: -700px;
+  font-size: 15px;
+}
+
+.container19 {
+  display: flex;
+  margin-top: -1500px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* This code positions the gallery */
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(91, 91, 91);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.innerSlide {
+  width: 100px;
+}
+
+.innerSlide img {
+  width: 100px;
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+      font-size: 11px
+  }
+}
+
+.innerSlide {
+ width: 660px;
+ height: auto;
+ text-decoration: none;
+}
+
+.innerSlide img{
+  display: grid;
+  margin-left: 50px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.slideshow-container {
+  border: #707070;
+  border-radius: 30px;
+  border-style: solid;
+  margin-bottom: -500px;
+  position: absolute;
+  top: 300%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.otherplaces {
+  position: absolute;
+  top: 270%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-left: -320px;
+}
+
+body {
+  overflow:auto;
+}
+
+.footer {
+  overflow: hidden;
+}
+
+.backgrounds{
+  object-position: 50% 50%;
+  top: 270%;
+  transform: translate(0%, 0%);
+}
+
+.send {
+  cursor: pointer;
+  top: 270%;
+  transform: translate(0%, 0%);
+  margin-left: 1250px;
+  margin-top: -550px;
+}
+
+.interested{
+  transform: translate(0%, 0%);
+  color: white;
+  font-size: 40px;
+  margin-left: 500px;
+  margin-top: -450px;
+}
+
+.socials{
+  display: flex;
+  transform: translate(0%, 0%);
+  margin-top: 30px;
+  margin-left: 1380px;
+}
+
+.media {
+  transform: translate(0%, 0%);
+  color: white;
+  margin-top: 520px;
+  margin-left: 1330px;
+}
+
+.rights{
+  transform: translate(0%, 0%);
+  margin-top: -10px;
+}
+
+.email{
+  transform: translate(0%, 0%);
+  cursor: pointer;
+  margin-left: 500px;
+  margin-top: -520px;
+}
+
+.popup{
+  transform: translate(0%, 0%);
+}
+
+ /* Popup container */
+ .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
+
